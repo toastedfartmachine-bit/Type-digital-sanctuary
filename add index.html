@@ -1,1 +1,23 @@
-add index.html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Offline Text Editor</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/idb/build/iife/index-min.js"></script>
+</head>
+<body>
+  <div id="sidebar">
+    <button id="newFileBtn">New File</button>
+    <ul id="fileList"></ul>
+  </div>
+  <div id="editor">
+    <input id="fileName" placeholder="Filename" />
+    <textarea id="fileContent" rows="20" cols="80"></textarea>
+    <div id="status">Words: 0, Chars: 0</div>
+    <button id="saveBtn">Save</button>
+    <button id="deleteBtn">Delete</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
