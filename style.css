@@ -1,1 +1,30 @@
-add style.css
+body {
+  font-family: sans-serif;
+  margin: 0;
+  display: flex;
+  height: 100vh;
+}
+#sidebar {
+  width: 200px;
+  background: #f2f2f2;
+  padding: 10px;
+  overflow-y: auto;
+}
+#editor {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+#fileList li {
+  list-style: none;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+textarea {
+  flex: 1;
+  margin-top: 10px;
+}
+button {
+  margin: 5px 5px 5px 0;
+}
